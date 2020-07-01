@@ -1,0 +1,37 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: ihrm-system #指定服务名
+  servlet:
+    multipart:
+      max-request-size: 100MB
+      max-file-size: 100MB
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: DoItYun.123
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ihrm?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: admin
+  jpa:
+    database: mysql
+    show-sql: true
+    open-in-view: true
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+
+jwt:
+  config:
+    key: ihrm
+    ttl: 3600000
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6868/eureka
+  instance:
+    prefer-ip-address: true

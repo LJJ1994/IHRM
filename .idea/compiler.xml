@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ihrm_system" />
+        <module name="ihrm_eureka" />
+        <module name="ihrm_social_security" />
+        <module name="ihrm_company" />
+        <module name="ihrm_employee" />
+        <module name="ihrm_common_model" />
+        <module name="ihrm_gate" />
+        <module name="ihrm_common" />
+        <module name="ihrm_jasperreport" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ihrm_code_generator" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ihrm_code_generator" options="-parameters" />
+      <module name="ihrm_common" options="-parameters" />
+      <module name="ihrm_common_model" options="-parameters" />
+      <module name="ihrm_company" options="-parameters" />
+      <module name="ihrm_employee" options="-parameters" />
+      <module name="ihrm_eureka" options="-parameters" />
+      <module name="ihrm_gate" options="-parameters" />
+      <module name="ihrm_jasperreport" options="-parameters" />
+      <module name="ihrm_parent" options="" />
+      <module name="ihrm_social_security" options="-parameters" />
+      <module name="ihrm_system" options="-parameters" />
+    </option>
+  </component>
+</project>

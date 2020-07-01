@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ihrm.social.dao.UserSocialSecurityMapper">
+    <select id="findList" resultType="com.ihrm.domain.social_security.response.UserSocialSecurityDTO"
+            parameterType="com.ihrm.domain.social_security.request.UserSocialSecurityRequest">
+        select
+            bu.id,
+            bu.username,
+            bu.mobile,
+            bu.work_number workNumber,
+            bu.department_name departmentName,
+            bu.time_of_entry timeOfEntry,
+            bu.time_of_dimission leaveTime,
+            ssuss.participating_in_the_city participatingInTheCity,
+            ssuss.participating_in_the_city_id participatingInTheCityId,
+            ssuss.provident_fund_city_id providentFundCityId,
+            ssuss.provident_fund_city providentFundCity,
+            ssuss.social_security_base socialSecurityBase,
+            ssuss.provident_fund_base providentFundBase
+        from
+            bs_user bu
+        left join co_department cd on bu.department_id=cd.id
+        left join ss_user_social_security ssuss on ssuss.user_id=bu.id
+        <where>
+            bu.company_id=#{companyId}
+            <if test="departmentChecks != null and departmentChecks.size>0">
+                and department_id in
+                <foreach collection="departmentChecks" index="index" item="item" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="providentFundChecks != null and providentFundChecks.size>0">
+                and ssuss.provident_fund_city_id in
+                <foreach collection="providentFundChecks" index="index" item="item" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="socialSecurityChecks != null and socialSecurityChecks.size>0">
+                and ssuss.participating_in_the_city_id in
+                <foreach collection="socialSecurityChecks" index="index" item="item" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+        </where>
+    </select>
+</mapper>
