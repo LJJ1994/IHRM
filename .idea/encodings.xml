@@ -3,7 +3,6 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ihrm_attendance" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/ihrm_code_generator" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ihrm_common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ihrm_common_model" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ihrm_company" charset="UTF-8" />
@@ -11,6 +10,7 @@
     <file url="file://$PROJECT_DIR$/ihrm_eureka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ihrm_gate" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ihrm_jasperreport" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ihrm_salarys" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ihrm_social_security" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ihrm_system" charset="UTF-8" />
   </component>

@@ -26,6 +26,7 @@ import java.util.Map;
  **/
 @RestController
 @RequestMapping("/attendances")
+@CrossOrigin
 public class AttendanceController extends BaseController {
 
     @Autowired

@@ -122,6 +122,16 @@ public class UserController extends BaseController {
         return new Result<>(ResultCode.SUCCESS, pr);
     }
 
+    /**
+     * 查询所有用户，供salarys模块调用
+     * @return
+     */
+    @RequestMapping(value = "/user/list", method = RequestMethod.GET)
+    public Result findAll(){
+        List<User> all = userService.findAll();
+        return new Result<>(ResultCode.SUCCESS, all);
+    }
+
     @RequestMapping(value = "/user/assignRoles", method = RequestMethod.PUT)
     public Result assignRole(@RequestBody Map<String, Object> map){
         String uid = (String) map.get("id");

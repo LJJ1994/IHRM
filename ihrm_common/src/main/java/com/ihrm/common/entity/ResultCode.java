@@ -9,9 +9,9 @@ public enum ResultCode {
     LOGIN_SUCCESS(false, 10005, "登录成功"),
     LOGIN_ERROR(false, 10006, "用户名或者密码错误");
 
-    private boolean success;
-    private Integer code;
-    private String message;
+    private boolean success = true;
+    private Integer code = 10000;
+    private String message = "操作成功";
 
     ResultCode(boolean success, int code, String message) {
         this.success = success;
@@ -19,9 +19,7 @@ public enum ResultCode {
         this.message = message;
     }
 
-    public boolean success(){
-        return success;
-    }
+    private ResultCode(){}
 
     public Integer code(){
         return code;
@@ -29,5 +27,9 @@ public enum ResultCode {
 
     public String message(){
         return message;
+    }
+
+    public boolean success(){
+        return success;
     }
 }

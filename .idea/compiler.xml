@@ -7,15 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ihrm_attendance" />
-        <module name="ihrm_system" />
+        <module name="ihrm_salarys" />
         <module name="ihrm_eureka" />
         <module name="ihrm_social_security" />
         <module name="ihrm_company" />
+        <module name="ihrm_system" />
         <module name="ihrm_employee" />
         <module name="ihrm_common_model" />
-        <module name="ihrm_gate" />
-        <module name="ihrm_common" />
         <module name="ihrm_jasperreport" />
+        <module name="ihrm_common" />
+        <module name="ihrm_gate" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -34,6 +35,7 @@
       <module name="ihrm_gate" options="-parameters" />
       <module name="ihrm_jasperreport" options="-parameters" />
       <module name="ihrm_parent" options="" />
+      <module name="ihrm_salarys" options="-parameters" />
       <module name="ihrm_social_security" options="-parameters" />
       <module name="ihrm_system" options="-parameters" />
     </option>

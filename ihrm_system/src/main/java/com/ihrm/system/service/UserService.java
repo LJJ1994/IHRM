@@ -30,6 +30,8 @@ public interface UserService {
      */
     Page<User> findSearch(Map<String,Object> map, Integer page, Integer size);
 
+    List<User> findAll();
+
     /**
      * 分配角色
      * @param userId

@@ -12,7 +12,9 @@ public class Result<T> {
     private T data;
 
     public Result(){
-
+        this.code = 10000;
+        this.message = "操作成功";
+        this.success = true;
     }
 
     public Result(ResultCode code){

@@ -82,7 +82,8 @@ public class User {
     private Integer inServiceStatus;
     private String departmentName;
     private String level;
-
+    //离职时间
+    private Date timeOfDimission;
     private String staffPhoto;
 
     public User(Object [] values) {

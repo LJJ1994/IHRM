@@ -89,6 +89,11 @@ public class UserServiceImpl implements UserService {
         return userDao.findAll(createSpecification(map), PageRequest.of(page-1, size));
     }
 
+    public List<User> findAll(){
+        List<User> all = userDao.findAll();
+        return all;
+    }
+
     @Override
     public void assignRoles(String userId, List<String> roleIds) {
         User user = userDao.findById(userId).get();

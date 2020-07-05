@@ -25,6 +25,8 @@ public class SalaryArchiveDetail implements Serializable {
 
     private static final long serialVersionUID = 6021094301665428271L;
 
+    public SalaryArchiveDetail(){}
+
     public SalaryArchiveDetail(String userId, String mobile, String username, String departmentName) {
         this.userId = userId;
         this.mobile = mobile;

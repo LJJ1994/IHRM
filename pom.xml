@@ -20,6 +20,7 @@
         <module>ihrm_gate</module>
         <module>ihrm_social_security</module>
         <module>ihrm_attendance</module>
+        <module>ihrm_salarys</module>
     </modules>
 
     <parent>

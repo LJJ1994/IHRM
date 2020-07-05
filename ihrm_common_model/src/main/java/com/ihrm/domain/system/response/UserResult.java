@@ -99,5 +99,7 @@ public class UserResult implements Serializable {
             this.roleIds.add(role.getId());
         }
     }
+
+    public UserResult(){}
 }
 
