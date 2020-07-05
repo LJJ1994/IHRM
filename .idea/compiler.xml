@@ -13,6 +13,7 @@
         <module name="ihrm_company" />
         <module name="ihrm_system" />
         <module name="ihrm_employee" />
+        <module name="ihrm_audit" />
         <module name="ihrm_common_model" />
         <module name="ihrm_jasperreport" />
         <module name="ihrm_common" />
@@ -26,6 +27,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ihrm_attendance" options="-parameters" />
+      <module name="ihrm_audit" options="-parameters" />
       <module name="ihrm_code_generator" options="-parameters" />
       <module name="ihrm_common" options="-parameters" />
       <module name="ihrm_common_model" options="-parameters" />
